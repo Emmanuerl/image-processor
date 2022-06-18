@@ -59,6 +59,6 @@ async function downloadImage(url: string, filepath: string) {
   });
 }
 
-export function getPath(id: number, type: "filtered" | "downloaded"): string {
+function getPath(id: number, type: "filtered" | "downloaded"): string {
   return `${__dirname}/tmp/${type}.${id}.jpg`;
 }
