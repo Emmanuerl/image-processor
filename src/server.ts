@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { router as imageFilterRouter } from "./http/controllers/images/images.controller";
+import { router as imageFilterRouter } from "./controllers/images/images.controller";
 
 (async () => {
   // Init the Express application
