@@ -1,4 +1,5 @@
-import Axios from "axios";
+import Axios, { AxiosError } from "axios";
+
 import Jimp from "jimp";
 import fs from "fs";
 
@@ -59,6 +60,6 @@ async function downloadImage(url: string, filepath: string) {
   });
 }
 
-export function getPath(id: number, type: "filtered" | "downloaded"): string {
+function getPath(id: number, type: "filtered" | "downloaded"): string {
   return `${__dirname}/tmp/${type}.${id}.jpg`;
 }
