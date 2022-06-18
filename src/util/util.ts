@@ -1,5 +1,4 @@
-import Axios, { AxiosError } from "axios";
-
+import Axios from "axios";
 import Jimp from "jimp";
 import fs from "fs";
 
