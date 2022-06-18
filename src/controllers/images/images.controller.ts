@@ -12,6 +12,7 @@ router.get("/", isFilterImageDTO, async (req: Request, res: Response) => {
     const output = await filterImageFromURL(url);
     return sendFile(res, output);
   } catch (err) {
+    console.log(err);
     if (err instanceof AxiosError) {
       return res
         .status(err.response.status)
