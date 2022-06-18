@@ -20,7 +20,7 @@ router.get("/", isFilterImageDTO, async (req: Request, res: Response) => {
         );
     }
     return res
-      .send(500)
+      .status(500)
       .send("We are currently having system level issues. Kindly bear with us");
   }
 });
