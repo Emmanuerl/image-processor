@@ -34,7 +34,9 @@ import { router as imageFilterRouter } from "./controllers/images/images.control
   // Root Endpoint
   // Displays a simple message to the user
   app.get("/", async (req, res) => {
-    res.send("try GET /filteredimage?image_url={{}}");
+    res.send(
+      "Hi There. Welcome to the project! \n try making a GET /filteredimage?image_url={{}}"
+    );
   });
 
   // Start the Server
