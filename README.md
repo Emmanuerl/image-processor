@@ -2,6 +2,10 @@
 
 A simple image filtering microservice that takes in JPEG image URLs and returns a greyscale filtered version.
 
+# Deployment Image
+
+![alt text](https://github.com/Emmanuerl/image-processor/blob/main/deployment_screenshots/deployment.png?raw=true)
+
 ### Setup Node Environment
 
 You'll need to create a new node server. Open a new terminal within the project directory and run:
